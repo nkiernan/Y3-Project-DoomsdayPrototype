@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Doomsday App Prototype</string>
+    <string name="monday">Mon</string>
+    <string name="tuesday">Tue</string>
+    <string name="wednesday">Wed</string>
+    <string name="thursday">Thu</string>
+    <string name="friday">Fri</string>
+    <string name="saturday">Sat</string>
+    <string name="sunday">Sun</string>
+    <string name="score">Score: </string>
+    <string name="default_score">0/0</string>
+    <string name="default_date">01/01/1800</string>
+</resources>
