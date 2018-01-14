@@ -1,8 +1,8 @@
 package uk.ac.mmu.project.doomsdayprototype;
 
 import android.annotation.SuppressLint;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
 
@@ -32,59 +32,39 @@ public class MainActivity extends AppCompatActivity {
         score.setText(String.format("%d/%d", currentScore, totalScore));
     }
 
-    public void mondayOnClick(View v) {
+    public void processAnswer(int i) {
         totalScore++;
-        if (date.getDayOfWeek() == 1) {
+        if (date.getDayOfWeek() == i) {
             currentScore++;
         }
         updateScreen();
+    }
+
+    public void mondayOnClick(View v) {
+        processAnswer(1);
     }
 
     public void tuesdayOnClick(View v) {
-        totalScore++;
-        if (date.getDayOfWeek() == 2) {
-            currentScore++;
-        }
-        updateScreen();
+        processAnswer(2);
     }
 
     public void wednesdayOnClick(View v) {
-        totalScore++;
-        if (date.getDayOfWeek() == 3) {
-            currentScore++;
-        }
-        updateScreen();
+        processAnswer(3);
     }
 
     public void thursdayOnClick(View v) {
-        totalScore++;
-        if (date.getDayOfWeek() == 4) {
-            currentScore++;
-        }
-        updateScreen();
+        processAnswer(4);
     }
 
     public void fridayOnClick(View v) {
-        totalScore++;
-        if (date.getDayOfWeek() == 5) {
-            currentScore++;
-        }
-        updateScreen();
+        processAnswer(5);
     }
 
     public void saturdayOnClick(View v) {
-        totalScore++;
-        if (date.getDayOfWeek() == 6) {
-            currentScore++;
-        }
-        updateScreen();
+        processAnswer(6);
     }
 
     public void sundayOnClick(View v) {
-        totalScore++;
-        if (date.getDayOfWeek() == 0) {
-            currentScore++;
-        }
-        updateScreen();
+        processAnswer(0);
     }
 }
